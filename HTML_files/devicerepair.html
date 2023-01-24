@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Service de dispozitive</title>
+  <link rel="stylesheet" href="changepassword.css">
+  <link rel="stylesheet" href="changepassword.js">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Sono:wght@400;500;600&display=swap" rel="stylesheet">
+</head> 
+
+<div class="mainDiv">
+    <div class="cardStyle">
+      <form action="devicerepair.php" method="post" >
+        
+        <img src="" id="signupLogo"/>
+        
+        <h2 class="formTitle">
+        Inregistrare device
+        </h2> 
+
+      <div class="inputDiv">
+        <label class="inputLabel" for="nume">Nume dispozitiv</label>
+        <input type="text" name="NumeDispozitiv" required>
+      </div>
+        
+      <div class="inputDiv">
+        <label for="device">Tip Dispozitiv</label>
+            <select name="device" id="device">
+            <option value="Calculator">Calculator</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Telefon">Telefon</option>
+            <option value="Tableta">Tableta</option>
+            </select>
+      </div>
+      <div class="inputDiv">
+        <label for="service">Serviciu cerut</label>
+            <select name="service" id="service">
+            <option value="Curatare">Curatare</option>
+            <option value="Schimbare Baterie">Schimbare baterie</option>
+            <option value="Reconfigurare">Reconfigurare</option>
+            <option value="Instalare OS">Instalare sistem de operare</option>
+            </select>
+      </div>
+      
+      <div class="buttonWrapper">
+        <button type="submit" id="submitButton" onclick="validateSignupForm()" class="submitButton pure-button pure-button-primary">
+          <span>Continue</span>
+        </button>
+      </div>
+        
+    </form>
+    </div>
+  </div>
+
+</html>

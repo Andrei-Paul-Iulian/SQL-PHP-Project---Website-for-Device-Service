@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Service de dispozitive</title>
+    <link rel="stylesheet" href="deleteaccount.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Sono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'">Delete Account</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form action="deleteaccount.php" method = "post">
+    <div class="container">
+      <h1>Delete Account</h1>
+      <p>Are you sure you want to delete your account?</p>
+
+      <div class="clearfix">
+        <input type="submit" name = "cancel" value = "Cancel">
+        <input type="submit" name = "delete" value = "Delete">
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

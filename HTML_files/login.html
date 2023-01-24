@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="'viewport" content="device-width", initial-scale="1.0">
+    <title>Service de dispozitive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <br>
+<br>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Bine ai venit</h2>
+            <form action="login.php" method="post">
+                <label>Email</label>
+                <input type="text" name="Email" required/>
+
+                <label>Parola</label>
+                <input type="password" name="Parola" required/>
+
+            <p class="forgot-pass">Ti-ai uitat parola?</p>
+            <input type="submit" name="submit" value="Login" style="color:rgb(4, 0, 255);">
+            </form>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                    <h3>Nu ai un cont?Inregistreaza-te!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>Daca ai deja un cont, doar logheaza-te<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2>Creaza-ti un cont</h2>
+                <form method="post" action="registrationpaul.php">
+
+                    <label>Nume</label>
+                    <input type = "text" name = "Nume" required/>
+
+                    <label>Prenume</label>
+                    <input type = "text" name="Prenume" required/>
+
+                    <label>Telefon</label>
+                    <input type = "text" name="Telefon" required/>
+
+                    <label>Email</label>
+                    <input type="text" name="Email" required/>
+
+                    <label>Adresa</label>
+                    <input type="text" name="Adresa" required/>
+
+                    <label>Oras</label>
+                    <input type="text" name="Oras" required/>
+
+                    <label>Judet</label>
+                    <input type="text" name="Judet" required/>
+
+                    <label>Parola</label>
+                    <input type="password" name="Parola" required/>
+
+                    <label>Reintroduce-ti Parola</label>
+                    <input type="password" name="ReParola" required/>
+                    
+                    <p class="forgot-pass"></p>
+                    <input type="submit" name="" value="Register" style="color:rgb(4, 0, 255);">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+  
+</body>
+</html>
